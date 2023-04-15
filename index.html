@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <!-- Meta Rules -->
+        <meta charset="utf-8"/>
+        <title>Form Project</title>
+
+        <!-- Css Files -->
+
+        <!-- FontAwesome Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+        <!-- Normalize -->
+        <link rel="stylesheet" href="./Css/Normalize.css">
+
+        <!-- Main -->
+        <link rel="stylesheet" href="./Css/main.css">
+
+    </head>
+    <body>
+        
+        <!-- Start Header -->
+
+        <div class="header position-rel">
+            <div class="overlay position-ab">
+                <div class="container">
+                    <div class="navbar">
+                        <div class="logo float-l position-rel poppins-m">
+                            <i class="fa fa-sharp fa-solid fa-plus position-ab"></i>
+                            <span>Medicine</span>
+                        </div>
+                        <ul class="links unstyled-li float-l poppins-l position-rel">
+                            <li class="active">Home</li>
+                            <li>Medicine</li>
+                            <li>Professionals</li>
+                            <li>Contact</li>
+                        </ul>
+                        <form class="search-bar float-l position-rel">
+                            <i class="fa fa-light fa-magnifying-glass position-ab"></i>
+                            <input class="poppins-l" id="myinput" type="search" name="search" placeholder="Search" oninput="toggleClearButton()"/>
+                            <div id="clearbutton" class="clear-button position-ab" onclick="clearInput()">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </form>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="body-header">
+                        <div class="intro float-l position-rel poppins-l">
+                            <span id="og-bar" class="og-bar"></span>
+                            <h1 class="poppins-m">Book an appointment</h1>
+                            <h2>We take care of your health</h2>
+                            <p>Commodo sint commodo consequat aliqua incididunt mollit exercitation exercitation nulla ullamco reprehenderit nulla occaecat. Consectetur velit veniam sunt aliquip cupidatat esse cupidatat nostrud incididunt fugiat ex sit aliquip ut.</p>
+                            <img class="position-ab" src="Images/DNA.png" alt=""/>
+                            <i class="fa-sharp fa-solid fa-xmark x-mark position-ab"></i>
+                            <i class="fa-sharp fa-solid fa-xmark x-mark position-ab"></i>
+                            <i class="fa-sharp fa-solid fa-xmark x-mark position-ab"></i>
+                            <i class="fa-sharp fa-solid fa-xmark x-mark position-ab"></i>
+                        </div>
+                        <div class="form float-l position-rel">
+                            <i class="fa-sharp fa-solid fa-xmark x-mark position-ab"></i>
+                            <i class="fa-sharp fa-solid fa-xmark x-mark position-ab"></i>
+                            <i class="fa-sharp fa-solid fa-xmark x-mark position-ab"></i>
+                            <i class="fa-sharp fa-solid fa-xmark x-mark position-ab"></i>
+                            <form class="booking-appoint">
+                                <label class="poppins-l">Name</label>
+                                <input class="poppins-l" type="text" name="Name">
+                                <label class="poppins-l">Professional</label>
+                                <input class="poppins-l" type="text" name="Professional">
+                                <div class="except">
+                                    <div class="date float-l">
+                                        <label class="poppins-l">Date</label>
+                                        <input class="poppins-l" type="date" name="Date">
+                                    </div>
+                                    <div class="center float-l">
+                                        <label class="poppins-l">Center</label>
+                                        <input class="poppins-l" type="text" name="Center">
+                                    </div>
+                                </div>
+                                <label class="poppins-l">Mail</label>
+                                <input class="poppins-l" type="email" name="Mail">
+                                <p class="poppins-l">Deserunt ipsum non minim laborum tempor. Deserunt laborum excepteur ex anim anim tempor in mollit esse deserunt magna. Aliqua enim labore ipsum aliqua labore.</p>
+                                <input class="poppins-m" type="submit" value="Send">
+                                <div class="clearfix"></div>
+                            </form>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Header -->
+
+
+        <script src="./Js/jquery-3.6.4.min.js"></script>
+        <script src="./js/pluggin.js"></script>
+    </body>
+
+</html>

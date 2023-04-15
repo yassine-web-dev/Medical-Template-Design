@@ -1,0 +1,495 @@
+/* Start Global Rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body { height: 970px; }
+
+/* Clear Style Global*/
+.bar::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #5ba294;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bar:first-of-type::after {
+    top: 15px;
+    left: 0;
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    -moz-transform: rotate(45deg) translate(-5px, -5px);
+    -o-transform: rotate(45deg) translate(-5px, -5px);
+    -ms-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.bar:nth-of-type(2)::after {
+    display: none;
+}
+
+.bar:last-of-type::after {
+    top: 25px;
+    left: 0;
+    -webkit-transform: rotate(-45deg) translate(12px, -12px);
+    -moz-transform: rotate(-45deg) translate(12px, -12px);
+    -o-transform: rotate(-45deg) translate(12px, -12px);
+    -ms-transform: rotate(-45deg) translate(12px, -12px);
+    transform: rotate(-45deg) translate(12px, -12px);
+}
+
+/* Edit Input Cursor */
+input::-webkit-search-cursor,
+input::-moz-search-cursor,
+input::-ms-search-cursor,
+input {
+    color: #FFF;
+    font-size: 16px;
+}
+
+/* End Global Rules */
+
+/* Start Framework */
+
+.container {
+    width: 1350px;
+    margin: auto;
+}
+
+.unstyled-li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.float-l {
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.x-mark {
+    font-size: 40px;
+    color: #5ba294;
+}
+
+.position-rel {
+    position: relative;
+}
+
+.position-ab {
+    position: absolute
+}
+
+/* Clear Style */
+.clear-style {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 8px;
+    left: 240px;
+}
+
+.poppins-l {
+    font-family: Poppins Light;
+}
+
+.poppins-m {
+    font-family: Poppins Medium;
+}
+
+@font-face {
+    font-family: Poppins Light;
+    src: url('../Fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: Poppins Medium;
+    src: url('../Fonts/Poppins-Medium.ttf');
+}
+
+/* End Framework */
+
+/* Start Header */
+
+.header {
+    background-image: url('../Images/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.header .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background-color: rgb(64, 38, 147, .8);
+}
+
+.header .navbar {
+    padding: 60px 0 85px;
+}
+
+.header .navbar .logo {
+    width: 32.333%;
+    margin-top: 5px;
+    padding-left: 77px;
+}
+
+.header .navbar .logo i {
+    top: 0px;
+    left: 55px;
+    font-size: 23px;
+    color: #5ba294;
+}
+
+.header .navbar .logo span {
+    font-size: 23px;
+}
+
+.header .navbar .links {
+    width: 44.333%;
+    margin-top: 5px;
+}
+
+.header .navbar .links li {
+    display: inline-block;
+    font-size: 23px;
+    margin-right: 41px;
+    cursor: pointer;
+    -webkit-transition: All .4s ease-in-out;
+    -moz-transition: All .4s ease-in-out;
+    -o-transition: All .4s ease-in-out;
+    -ms-transition: All .4s ease-in-out;
+    transition: All .4s ease-in-out;
+}
+
+.header .navbar .links li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FFF;
+    position: absolute;
+    top: 33px;
+    -webkit-transition: All .4s ease-in-out;
+    -moz-transition: All .4s ease-in-out;
+    -o-transition: All .4s ease-in-out;
+    -ms-transition: All .4s ease-in-out;
+    transition: All .4s ease-in-out;
+}
+
+.header .navbar .links li:hover:first-of-type::after {
+    width: 68px;
+}
+
+.header .navbar .links li:hover:nth-of-type(2)::after {
+    width: 102px;
+}
+
+.header .navbar .links li:hover:nth-of-type(3)::after {
+    width: 148px;
+}
+
+.header .navbar .links li:hover:last-of-type::after {
+    width: 93px;
+}
+
+.header .navbar li.active {
+    color: #5ba294;
+}
+
+.header .navbar .links li:first-of-type.active::after {
+    width: 68px;
+}
+
+.header .navbar .links li:nth-of-type(2).active::after {
+    width: 102px;
+}
+
+.header .navbar .links li:nth-of-type(3).active::after {
+    width: 148px;
+}
+
+.header .navbar .links li:last-of-type.active::after {
+    width: 93px;
+}
+
+.header .navbar .links li:hover {
+    color: #5ba294;
+    
+}
+
+.header .navbar .search-bar {
+    width: 22.5%;
+}
+
+.header .navbar .search-bar i {
+    top: 10px;
+    left: 11px;
+    font-size: 18px;
+}
+
+.header .navbar .search-bar input {
+    width: 270px;
+    height: 36px;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    outline: none;
+    padding: 0 35px;
+    color: #FFF;
+}
+
+.header .navbar .search-bar input::placeholder {
+    color: #FFF;
+    font-size: 20px;
+    font-family: Poppins Light;
+}
+
+/* Edit Input Cursor */
+.header .navbar .search-bar input[type="search"]::-webkit-search-cursor,
+.header .navbar .search-bar input[type="search"]::-moz-search-cursor,
+.header .navbar .search-bar input[type="search"]::-ms-search-cursor,
+.header .navbar .search-bar input[type="search"] {
+    font-size: 16px;
+}
+
+/* Create New Clear Button */
+.header .navbar .search-bar .clear-button {
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    left: 240px;
+    cursor: pointer;
+    display: none;
+}
+
+.header .navbar .search-bar .clear-button .bar::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #444343;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header .navbar .search-bar .clear-button .bar:first-of-type::after {
+    top: 15px;
+    left: 0;
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    -moz-transform: rotate(45deg) translate(-5px, -5px);
+    -o-transform: rotate(45deg) translate(-5px, -5px);
+    -ms-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.header .navbar .search-bar .clear-button .bar:nth-of-type(2)::after {
+    display: none;
+}
+
+.header .navbar .search-bar .clear-button .bar:last-of-type::after {
+    top: 25px;
+    left: 0;
+    -webkit-transform: rotate(-45deg) translate(12px, -12px);
+    -moz-transform: rotate(-45deg) translate(12px, -12px);
+    -o-transform: rotate(-45deg) translate(12px, -12px);
+    -ms-transform: rotate(-45deg) translate(12px, -12px);
+    transform: rotate(-45deg) translate(12px, -12px);
+}
+
+.header .intro {
+    width: 57%;
+}
+
+.header .intro .og-bar {
+    display: inline-block;
+    width: 14px;
+    height: 140px;
+    background-color: #e0672b;
+    position: absolute;
+    top: 88px;
+    left: -28px;
+}
+
+.header .intro h1 {
+    font-size: 61px;
+    margin: 0;
+    margin-top: 90px;
+}
+
+.header .intro h2 {
+    margin: 0;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-top: 5px;
+    font-size: 36px;
+    margin-left: 4px;
+}
+
+.header .intro p {
+    margin: 50px 0 0 3px;
+    font-size: 17px;
+    width: 550px;
+}
+
+.header .intro img {
+    width: 400px;
+    top: 442px;
+    left: -116px;
+}
+
+.header .intro i {
+    right: 45px;
+}
+
+.header .intro i:first-of-type {
+    bottom: -222px;
+}
+
+.header .intro i:nth-of-type(2) {
+    bottom: -270px;
+}
+
+.header .intro i:nth-of-type(3) {
+    bottom: -318px;
+}
+
+.header .intro i:last-of-type {
+    bottom: -367px;
+}
+
+.header .form {
+    width: 43%;
+    border: 2px solid #FFF;
+    padding: 40px 0 50px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}
+
+.header .form i {
+    right: -50px;
+}
+
+.header .form i:first-of-type {
+    top: -9px;
+}
+
+.header .form i:nth-of-type(2) {
+    top: 40px;
+}
+
+.header .form i:nth-of-type(3) {
+    top: 90px;
+}
+
+.header .form i:last-of-type {
+    top: 140px;
+}
+
+.header .form .booking-appoint label {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.header .form .booking-appoint input {
+    display: block;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    outline: none;
+    width: 500px;
+    height: 55px;
+    margin: 10px 16px 25px;
+    padding: 10px;
+    color: #FFF;
+}
+
+/* Edit Input Cursor */
+.header .form .booking-appoint input::-webkit-search-cursor {
+    font-size: 22px;
+}
+
+.header .form .booking-appoint input::-moz-search-cursor {
+    font-size: 22px;
+}
+
+.header .form .booking-appoint input::-ms-search-cursor {
+    font-size: 22px;
+}
+
+.header .form .booking-appoint input {
+    font-size: 22px;
+}
+
+.header .form .booking-appoint .except {
+    width: 540px;
+}
+
+.header .form .booking-appoint .except .date {
+    width: 37%;
+    margin-right: 4%;
+}
+
+.header .form .booking-appoint .except .center {
+    width: 59%;
+}
+
+.header .form .booking-appoint .except .center label {
+    margin-left: 11px;
+}
+
+.header .form .booking-appoint .except .date input {
+    width: 100%;
+    padding: 4px;
+}
+
+.header .form .booking-appoint .except .center input {
+    width: 88%;
+    margin: 10px 4% 25px;
+}
+
+.header .form .booking-appoint p {
+    margin: 0;
+    width: 500px;
+    line-height: 1.3;
+    font-size: 17px;
+    margin-left: 16px;
+}
+
+.header .form .booking-appoint input[type='submit'] {
+    background-color: #ff6721;
+    color: #FFF;
+    padding: 3px 70px;
+    border: 1px solid #ff6721;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 16px;
+    width: 224px;
+}
+
+/* End Header */
